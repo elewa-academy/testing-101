@@ -29,7 +29,7 @@ The second part of this lesson will give some ideas for incorporating testing in
 
 [TOP](#testing-101)
 ___
-## Specs
+## [Specs](https://github.com/elewa-academy/code-specs#practice-reading)
 Specs are a crucial part of planning code before writing code.  If you are going to follow the TDD or BDD testing paradigms, it's best you get a hang of these now.
 
 A specification is plain text that describes everything needed for someone to build code with a given functionality.  If specs are well written (and well followed) all implementations will be interchangeable.   My code may be faster than yours, and hers may be easier to read, and his uses less memory, but we could close our eyes to pick one and the application will still work the same.  
@@ -345,7 +345,7 @@ ___
 
 ## Exercises 
   
-* [Simplest Passing Functions](https://github.com/jankeLearning/content-code/tree/master/Week%2001/simplestPassingFuncs)  
+* [Simplest Passing Functions](https://github.com/elewa-academy/simplest-passing-functions)  
 * [RMurphey's JS-Assessment](https://github.com/rmurphey/js-assessment)
   
 ___
