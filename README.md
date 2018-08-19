@@ -7,12 +7,26 @@
 * [Minimal Passing Functions](#minimal-passing-functions)
 * [Gradual Refactoring](#gradual-refactoring)
 * [BDD, TDD](#bdd-and-tdd)  
-* [Testing Frameworks](#testing-frameworks)
+* [Minimal Testing Libraries](#minimla-testing-libraries)
 * [Exercises](#exercises)
+* [Resources](#resources)
 ___
 ## Intro
 
-Testing is an empassioned topic.  If you search online you'll find great debates over which frameworks to use and how to fit tests into your development cycle.  Underlying all sides of the arguments are a few universal concepts.  This lesson will attempt to teach the universal fundamentals then set you off on the right track to learn the rest.
+
+Writing tests for your code is one of the most important steps in the development process.  Good tests will help with documenting your code, QA, refactoring, maintenance, and everything in between.  
+
+Everyone agrees that tests are important, but people argue to the ends of the internet about how to fit tests into the development process. Do you write them first? Do you test your code every couple minutes? Do you pass your code off to testers after writing it?  In this project you won't worry about any of that, the focus here is to get used to writing and reading tests.  
+
+So far in with these projects we've talked about specs (args, return, behavior) as the measure of code - any code matching the same specs is interchangeable.  In this project you will take this idea to the next level:
+
+> The tests define the module
+
+This means that the tests you write and publish along with your code are the ultimate guide to your project.  
+* Anyone should be able to read your test files and understand what your project does.
+* Any code that passes your tests should be able to replace your module in an application.
+
+
 
 The first part of this lesson will cover testing fundamentals culminating in the backbone of (almost) all testing paradigms and frameworks - the test suite: 
 1. [Pure Functions](#pure-functions)
@@ -333,20 +347,50 @@ BDD and TDD work very well together.  BDD says that before you start writing you
 
 [TOP](#testing-101)
 ___
-## Testing Frameworks
+## Minimal Testing Libraries
 
 Hopefully you noticed how tedious it would be to write tests and testing suites by hand.  Developers aren't into that so they've written libraries to do it for you. 
-* [An overview](https://medium.com/powtoon-engineering/a-complete-guide-to-testing-javascript-in-2017-a217b4cd5a2a)
-* [State of testing](https://stateofjs.com/2016/testing/)
+
+Assert:
+* [In Node](https://nodejs.org/api/assert.html)
+* [W3Schools](https://www.w3schools.com/nodejs/ref_assert.asp)
+* [In the Browser](https://developer.mozilla.org/en-US/docs/Web/API/console/assert)
+* [In the Terminal](https://github.com/rowanmanning/proclaim)
+
+
+Tressa & Istanbul:
+* [Tressa in a NutShell](https://gist.github.com/WebReflection/00531a64bb7b846c9b78e059fc0441ff)
+* [Tressa.js](https://github.com/WebReflection/tressa#tressa-%20%20jstinytest)
+* [Istanbul.js](https://istanbul.js.org)
+
+A short list of minimal testing libraries to study:
+* [Example from class](./example-from-class)
+* [Tressa.js](https://github.com/WebReflection/tressa)
+* [Klud.js](https://bitbucket.org/zserge/klud.js/)
+* [Proclaim.js](https://github.com/rowanmanning/proclaim)
+* [jsTinyTest](https://github.com/joewalnes/jstinytest)
+* [is.js.org](http://is.js.org)
+* [Node-Micro-Test (async)](https://github.com/bcoe/node-micro-test)
 
 
 [TOP](#testing-101)
 ___
 
 ## Exercises 
-  
+   
+* [Reading Lodash](https://github.com/elewa-academy/reading-lodash)  
 * [Simplest Passing Functions](https://github.com/elewa-academy/simplest-passing-functions)  
 * [RMurphey's JS-Assessment](https://github.com/rmurphey/js-assessment)
+
+___
+
+## Resources
+
+
+* [Pt. 1 - Code Coverage](https://medium.com/@WebReflection/js-vanilla-test-code-coverage-7b7ba3740776)
+* [Pt. 2 - Tressa](https://medium.com/@WebReflection/vanilla-js-testing-part-ii-63b9d736121)
+* [Pure Functions, Easy Testing](https://github.com/foundersandcoders/ws-pure-functions-easy-testing)
+* [Mocks, Stubs & Spies](https://gaboesquivel.com/blog/2014/unit-testing-mocks-stubs-and-spies/). (Stateful components, hard testing)
   
 ___
 ___
